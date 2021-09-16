@@ -9,7 +9,7 @@
   "private": false,
   "scripts": {
     "serve": "parcel public/index.html",
-    "build": "parcel build public/index.html"
+    "build": "parcel build dist/index.html"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.4",

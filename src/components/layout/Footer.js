@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Logo from '/public/img/logo.svg';
+import Logo from '/static/img/logo.svg';
 import {
   FaFacebookSquare,
   FaInstagram,

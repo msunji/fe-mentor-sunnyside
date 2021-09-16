@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { Container } from './Container';
-import NavLogo from '/public/img/logo.svg';
+import NavLogo from '/static/img/logo.svg';
 // Import breakpoints
 import breakpoints from '../../styles/breakpoints';
 

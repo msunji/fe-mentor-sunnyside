@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 // Import desktop version of images
-import EggBgDesktop from '/public/img/desktop/image-transform.jpg';
-import CupBgDesktop from '/public/img/desktop/image-stand-out.jpg';
-import CherryBgDesktop from '/public/img/desktop/image-graphic-design.jpg';
-import OrangeBgDesktop from '/public/img/desktop/image-photography.jpg';
+import EggBgDesktop from '/static/img/desktop/image-transform.jpg';
+import CupBgDesktop from '/static/img/desktop/image-stand-out.jpg';
+import CherryBgDesktop from '/static/img/desktop/image-graphic-design.jpg';
+import OrangeBgDesktop from '/static/img/desktop/image-photography.jpg';
 // Import mobile version of images
-import EggBgMobile from '/public/img/mobile/image-transform.jpg';
-import CupBgMobile from '/public/img/mobile/image-stand-out.jpg';
-import CherryBgMobile from '/public/img/mobile/image-graphic-design.jpg';
-import OrangeBgMobile from '/public/img/mobile/image-photography.jpg';
+import EggBgMobile from '/static/img/mobile/image-transform.jpg';
+import CupBgMobile from '/static/img/mobile/image-stand-out.jpg';
+import CherryBgMobile from '/static/img/mobile/image-graphic-design.jpg';
+import OrangeBgMobile from '/static/img/mobile/image-photography.jpg';
 
 // Import breakpoints
 import breakpoints from '../styles/breakpoints';

@@ -1,6 +1,6 @@
-import Emily from '/public/img/testimonials/image-emily.jpg';
-import Thomas from '/public/img/testimonials/image-thomas.jpg';
-import Jennie from '/public/img/testimonials/image-jennie.jpg';
+import Emily from '/static/img/testimonials/image-emily.jpg';
+import Thomas from '/static/img/testimonials/image-thomas.jpg';
+import Jennie from '/static/img/testimonials/image-jennie.jpg';
 
 export const TestimonialData = [
   {

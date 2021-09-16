@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import BottlesDesktop from '/public/img/desktop/image-gallery-milkbottles.jpg';
-import OrangeDesktop from '/public/img/desktop/image-gallery-orange.jpg';
-import ConeDesktop from '/public/img/desktop/image-gallery-cone.jpg';
-import SugarcubesDesktop from '/public/img/desktop/image-gallery-sugarcubes.jpg';
+import BottlesDesktop from '/static/img/desktop/image-gallery-milkbottles.jpg';
+import OrangeDesktop from '/static/img/desktop/image-gallery-orange.jpg';
+import ConeDesktop from '/static/img/desktop/image-gallery-cone.jpg';
+import SugarcubesDesktop from '/static/img/desktop/image-gallery-sugarcubes.jpg';
 
-import BottlesMobile from '/public/img/desktop/image-gallery-milkbottles.jpg';
-import OrangeMobile from '/public/img/desktop/image-gallery-orange.jpg';
-import ConeMobile from '/public/img/desktop/image-gallery-cone.jpg';
-import SugarcubesMobile from '/public/img/desktop/image-gallery-sugarcubes.jpg';
+import BottlesMobile from '/static/img/desktop/image-gallery-milkbottles.jpg';
+import OrangeMobile from '/static/img/desktop/image-gallery-orange.jpg';
+import ConeMobile from '/static/img/desktop/image-gallery-cone.jpg';
+import SugarcubesMobile from '/static/img/desktop/image-gallery-sugarcubes.jpg';
 
 // Import breakpoints
 import breakpoints from '../styles/breakpoints';

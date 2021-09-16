@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container } from './layout';
 // Import desktop and mobile versions
-import HeroImgDesktop from '/public/img/desktop/image-header.jpg';
-import HeroImgMobile from '/public/img/mobile/image-header.jpg';
+import HeroImgDesktop from '/static/img/desktop/image-header.jpg';
+import HeroImgMobile from '/static/img/mobile/image-header.jpg';
 
 // Import down arrow
-import DownArrow from '/public/img/icon-arrow-down.svg';
+import DownArrow from '/static/img/icon-arrow-down.svg';
 
 // Import breakpoints
 import breakpoints from '../styles/breakpoints';

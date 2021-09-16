@@ -33,8 +33,5 @@
   },
   "resolutions": {
     "styled-components": "^5"
-  },
-  "staticFiles": {
-    "staticPath": "public"
   }
 }

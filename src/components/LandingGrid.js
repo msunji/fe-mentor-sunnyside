@@ -32,7 +32,7 @@ const LandingGridSection = styled.section`
 
   @media screen and ${breakpoints.lg} {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr minmax(11em, 1fr);
+    grid-template-rows: minmax(33em, 1fr) minmax(33em, 1fr) minmax(11em, 1fr);
     grid-template-areas:
       'transform egg'
       'cup stand-out'
@@ -42,6 +42,7 @@ const LandingGridSection = styled.section`
 
 const GridSquare = styled.div`
   grid-area: ${(props) => props.gridName};
+  height: 100%;
 
   h2 {
     color: var(--blue-black);
@@ -64,8 +65,26 @@ const GridSquare = styled.div`
 
   @media screen and ${breakpoints.lg} {
     .grid-content {
+      height: inherit;
       text-align: left;
-      padding: calc(2.5*var(--padding-y)) calc(2.5*var(--padding-x));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: calc(2.5*var(--padding-y));
+      padding-bottom: calc(2.5*var(--padding-y));
+    }
+  }
+  @media screen and ${breakpoints.xl} {
+    .grid-content {
+      &--transform {
+        padding-left: calc(3.5*var(--padding-y));
+        padding-right: calc(3*var(--padding-y));
+      }
+      &--standout {
+        padding-right: calc(3.5*var(--padding-y));
+        padding-left: calc(3*var(--padding-y));
+      }
     }
   }
 `;
@@ -182,7 +201,7 @@ export const LandingGrid = () => {
   return (
     <LandingGridSection>
       <GridSquare gridName="transform">
-        <div className="grid-content">
+        <div className="grid-content grid-content--transform">
           <h2>
             Transform your
             <br />
@@ -211,7 +230,7 @@ export const LandingGrid = () => {
         mobile={CupBgMobile}
       ></GridSquareBg>
       <GridSquare gridName="stand-out">
-        <div className="grid-content">
+        <div className="grid-content grid-content--standout">
           <h2>
             Stand out to the right
             <br />

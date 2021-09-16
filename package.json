@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Frontend Mentor Challenge Solution",
   "source": "src/index.html",
-  "main": "dist/index.js",
+  "default": "src/index.html",
   "author": "Marge Consunji.",
   "license": "MIT",
   "private": false,

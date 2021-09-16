@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "Frontend Mentor Challenge Solution",
   "source": "src/index.js",
-  "main": "index.js",
+  "default": "dist/index.html",
   "author": "Marge Consunji.",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "serve": "parcel public/index.html"
+    "serve": "parcel public/index.html",
+    "build": "parcel build public/index.html"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.4",

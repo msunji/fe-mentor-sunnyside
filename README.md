@@ -9,7 +9,8 @@ For this challenges, users need to be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-Here's the desktop version
+Here's the desktop version:
+
 ![Desktop Version](https://github.com/msunji/fe-mentor-sunnyside/blob/main/static/desktop-preview.png)
 
 <!--

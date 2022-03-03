@@ -5,7 +5,7 @@
 </p>
 <br />
 <p align="center">
-  <a href="https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef/hub/sunnyside-agency-landing-page-RoP8ukMov">View Challenge</a> | <a href="https://goofy-wozniak-4b3815.netlify.app/">View Live Site</a>
+  <a href="https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef/hub/sunnyside-agency-landing-page-RoP8ukMov">View Challenge</a> | <a href="https://fe-mentor-sunnyside.vercel.app/">View Live Site</a>
 </p>
 
 <br />

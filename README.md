@@ -6,7 +6,7 @@
 <br />
 <p align="center">
   <a href="https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef/hub/sunnyside-agency-landing-page-RoP8ukMov">View Challenge</a> | <a href="https://goofy-wozniak-4b3815.netlify.app/">View Live Site</a>
-</div>
+</p>
 
 <br />
 
@@ -19,9 +19,10 @@ Users should be able to:
 
 ## Overview
 
-This took a bit longer than I'd like to admit. I didn't bootstrap this with CRA, and opted to make this from scratch with Parcel instead of Webpack. Not to mention, I probably focussed a bit longer on the aspect-ratio/row-col sizing for some of the grid cells. Overall, I did learn more about the `aspect-ratio` property, which I hadn't really used before in the past. It works fine, but has no IE support. There are of course, a couple of hacks I learned in the process of making this site that achieve similar effects but require more markup (like for the padding hack, for instance).
+To give myself a bit of a challenge, I built this React app from scratch. I used Parcel instead of webpack, though I think it could be cool to either redo this project with Vite or webpack. I ran into a couple of issues with deployment, but it all came down to some issues in my Parcel config and the wrong plugin for static files. I eventually sorted out these issues and was able to deploy it without too many issues.
 
-On a somewhat different note, I also ran into a number of issues while deploying this site, but managed to sort it out in the end. It was a combination of using the wrong plugin for static files and a couple of issues in my `package.json` config for Parcel.
+While getting the styling sorted, I got to learn more about the `aspect-ratio` property, which I hadn't really used before in the past. It works fine, but has no IE support. There are of course, a couple of hacks I learned in the process of making this site that achieve similar effects but require more markup (like for the padding hack, for instance).
+
 
 ## Built with
 
@@ -29,6 +30,4 @@ On a somewhat different note, I also ran into a number of issues while deploying
 - Parcel
 - styled-components
 - styled-reset (for CSS reset)
-- Flexbox
-- CSS Grid
-- Hosted with Netlify
+- Hosted with Vercel

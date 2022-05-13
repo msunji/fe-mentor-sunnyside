@@ -30,7 +30,7 @@ const StyledFooter = styled.footer`
       text-decoration: none;
       transition: color 0.5s ease;
     }
-  
+
     a:hover,
     a:active {
       color: var(--white);
@@ -77,7 +77,8 @@ const FooterSocMedLinks = styled(FooterLinks)`
     fill: var(--cyan-dark-desat);
     opacity: 0.85;
     transition: fill 0.5s ease;
-    &:hover, &:active {
+    &:hover,
+    &:active {
       fill: var(--white);
     }
   }
@@ -108,22 +109,22 @@ export const Footer = () => {
         </FooterNavLinks>
         <FooterSocMedLinks>
           <li>
-            <a href="#">
+            <a href="https://www.facebook.com/">
               <FaFacebookSquare />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/">
               <FaInstagram />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://twitter.com/home">
               <FaTwitter />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.pinterest.com/">
               <FaPinterest />
             </a>
           </li>

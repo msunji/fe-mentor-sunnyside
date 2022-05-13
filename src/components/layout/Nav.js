@@ -103,7 +103,6 @@ const NavContainer = styled(Container)`
       }
 
       li {
-
         a,
         a:visited {
           color: var(--blue-black);
@@ -204,7 +203,12 @@ export const Nav = () => {
   return (
     <StyledNav>
       <NavContainer>
-        <a className="logo-container" href="#" onClick={closeMobileMenu}>
+        <a
+          className="logo-container"
+          href="#"
+          aria-label="Return to Home"
+          onClick={closeMobileMenu}
+        >
           <NavLogo />
         </a>
 

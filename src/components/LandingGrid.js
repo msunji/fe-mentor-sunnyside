@@ -59,7 +59,7 @@ const GridSquare = styled.div`
   }
 
   .grid-content {
-    padding: calc(2*var(--padding-y)) var(--padding-x);
+    padding: calc(2 * var(--padding-y)) var(--padding-x);
     text-align: center;
   }
 
@@ -71,26 +71,26 @@ const GridSquare = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      padding-top: calc(2.5*var(--padding-y));
-      padding-bottom: calc(2.5*var(--padding-y));
+      padding-top: calc(2.5 * var(--padding-y));
+      padding-bottom: calc(2.5 * var(--padding-y));
     }
   }
   @media screen and ${breakpoints.xl} {
     .grid-content {
       &--transform {
-        padding-left: calc(3.5*var(--padding-y));
-        padding-right: calc(3*var(--padding-y));
+        padding-left: calc(3.5 * var(--padding-y));
+        padding-right: calc(3 * var(--padding-y));
       }
       &--standout {
-        padding-right: calc(3.5*var(--padding-y));
-        padding-left: calc(3*var(--padding-y));
+        padding-right: calc(3.5 * var(--padding-y));
+        padding-left: calc(3 * var(--padding-y));
       }
     }
   }
 `;
 
 const GridSquareBg = styled(GridSquare)`
-  background: ${(props) => `var(--${props.color})`}
+  background: ${(props) => `var(--${props.$color})`}
     url(${(props) => props.mobile});
   background-size: cover;
   background-position: center;
@@ -99,7 +99,7 @@ const GridSquareBg = styled(GridSquare)`
   align-items: center;
 
   @media screen and ${breakpoints.lg} {
-    background: ${(props) => `var(--${props.color})`}
+    background: ${(props) => `var(--${props.$color})`}
       url(${(props) => props.desktop});
     background-size: cover;
     background-position: center;
@@ -176,7 +176,7 @@ const GridLink = styled.a`
     width: 108%;
     height: 10px;
     z-index: -2;
-    background: ${(props) => `var(--${props.color})`};
+    background: ${(props) => `var(--${props.$color})`};
     opacity: 0.25;
     border-radius: 28px;
     transition: opacity 0.4s ease;
@@ -190,7 +190,7 @@ const GridLink = styled.a`
     width: 0%;
     height: 10px;
     z-index: -1;
-    background: ${(props) => `var(--${props.color})`};
+    background: ${(props) => `var(--${props.$color})`};
     opacity: 1;
     border-radius: 28px;
     transition: all 0.4s ease;
@@ -212,20 +212,20 @@ export const LandingGrid = () => {
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          <GridLink color="yellow" href="#">
+          <GridLink $color="yellow" href="#">
             Learn More
           </GridLink>
         </div>
       </GridSquare>
       <GridSquareBg
         gridName="egg"
-        color="yellow"
+        $color="yellow"
         desktop={EggBgDesktop}
         mobile={EggBgMobile}
       ></GridSquareBg>
       <GridSquareBg
         gridName="cup"
-        color="red-soft"
+        $color="red-soft"
         desktop={CupBgDesktop}
         mobile={CupBgMobile}
       ></GridSquareBg>
@@ -241,7 +241,7 @@ export const LandingGrid = () => {
             photographers, videographers, and copywriters, we’ll build and
             extend yourbrand in digital places.
           </p>
-          <GridLink color="red-soft" href="#">
+          <GridLink $color="red-soft" href="#">
             Learn More
           </GridLink>
         </div>
@@ -250,7 +250,7 @@ export const LandingGrid = () => {
         gridName="cherry"
         headerColor="cyan-dark-desat"
         textColor="cyan-dark-desat"
-        color="cyan"
+        $color="cyan"
         desktop={CherryBgDesktop}
         mobile={CherryBgMobile}
       >
@@ -267,7 +267,7 @@ export const LandingGrid = () => {
         gridName="orange"
         headerColor="blue-dark"
         textColor="blue-dark"
-        color="bright-blue"
+        $color="bright-blue"
         desktop={OrangeBgDesktop}
         mobile={OrangeBgMobile}
       >

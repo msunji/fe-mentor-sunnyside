@@ -69,15 +69,36 @@ const NavContainer = styled(Container)`
       right: 0;
     }
 
-    a,
-    a:visited {
+    .nav-link,
+    .nav-link:visited {
       color: var(--blue-greyish-dark);
       transition: opacity 0.5s ease;
     }
 
-    a:not(.button):hover,
-    a:not(.button):active {
+    .nav-link:hover,
+    .nav-link:active {
       opacity: 0.5;
+    }
+
+    .nav-button {
+      font-family: var(--fraunces);
+      color: var(--blue-dark-desat);
+      font-size: 0.83em;
+      font-weight: 700;
+      border-radius: 2em;
+      border: none;
+      padding: 0.84rem 1.7rem;
+      text-transform: uppercase;
+      line-height: 1.389;
+      letter-spacing: -0.11px;
+      transition: background 0.5s ease;
+      background: var(--yellow);
+      cursor: pointer;
+
+      &:hover,
+      &:active {
+        background: hsla(51, 100%, 49%, 0.5);
+      }
     }
   }
 
@@ -101,50 +122,22 @@ const NavContainer = styled(Container)`
       &::before {
         display: none;
       }
+      .nav-link,
+      .nav-link:visited {
+        letter-spacing: -0.13px;
+        color: var(--white);
+        transition: opacity 0.5s ease;
+      }
 
-      li {
-        a,
-        a:visited {
-          color: var(--blue-black);
-          letter-spacing: -0.13px;
+      .nav-button {
+        color: var(--cyan-dark-desat);
+        background: hsla(0, 0%, 100%, 1);
+        &:hover,
+        &:active {
+          background: hsla(0, 0%, 100%, 0.25);
           color: var(--white);
-          transition: opacity 0.5s ease;
-        }
-
-        a:not(.button):hover,
-        a:not(.button):active {
-          opacity: 0.5;
         }
       }
-    }
-  }
-`;
-
-const ContactButton = styled.button`
-  font-family: var(--fraunces);
-  font-size: 0.83em;
-  font-weight: 700;
-  border-radius: 2em;
-  border: none;
-  padding: 0.84rem 1.7rem;
-  text-transform: uppercase;
-  line-height: 1.389;
-  letter-spacing: -0.11px;
-  transition: background 0.5s ease;
-  background: var(--yellow);
-  cursor: pointer;
-
-  &:hover,
-  &:active {
-    background: hsla(51, 100%, 49%, 0.5);
-  }
-
-  @media screen and ${breakpoints.lg} {
-    background: hsla(0, 0%, 100%, 1);
-    &:hover,
-    &:active {
-      background: hsla(0, 0%, 100%, 0.25);
-      color: var(--white);
     }
   }
 `;
@@ -220,17 +213,23 @@ export const Nav = () => {
           </MobileToggle>
           <ul className={`${openMobileMenu ? 'open' : ''}`}>
             <li onClick={closeMobileMenu}>
-              <a href="#">About</a>
+              <a className="nav-link" href="#">
+                About
+              </a>
             </li>
             <li onClick={closeMobileMenu}>
-              <a href="#">Services</a>
+              <a className="nav-link" href="#">
+                Services
+              </a>
             </li>
             <li onClick={closeMobileMenu}>
-              <a href="#">Projects</a>
+              <a className="nav-link" href="#">
+                Projects
+              </a>
             </li>
             <li onClick={closeMobileMenu}>
-              <a href="#" className="button">
-                <ContactButton>Contact</ContactButton>
+              <a href="#" className="nav-button">
+                Contact
               </a>
             </li>
           </ul>

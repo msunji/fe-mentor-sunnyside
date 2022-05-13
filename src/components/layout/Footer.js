@@ -109,22 +109,22 @@ export const Footer = () => {
         </FooterNavLinks>
         <FooterSocMedLinks>
           <li>
-            <a href="https://www.facebook.com/">
+            <a href="https://www.facebook.com/" aria-label="Facebook">
               <FaFacebookSquare />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/" aria-label="Instagram">
               <FaInstagram />
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/home">
+            <a href="https://twitter.com/home" aria-label="Twitter">
               <FaTwitter />
             </a>
           </li>
           <li>
-            <a href="https://www.pinterest.com/">
+            <a href="https://www.pinterest.com/" aria-label="Pinterest">
               <FaPinterest />
             </a>
           </li>

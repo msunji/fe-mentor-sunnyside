@@ -16,23 +16,23 @@ import breakpoints from '../styles/breakpoints';
 const photos = [
   {
     desktop: BottlesDesktop,
-    mobile: BottlesMobile
+    mobile: BottlesMobile,
   },
   {
     desktop: OrangeDesktop,
-    mobile: OrangeMobile
+    mobile: OrangeMobile,
   },
   {
     desktop: ConeDesktop,
-    mobile: ConeMobile
+    mobile: ConeMobile,
   },
   {
     desktop: SugarcubesDesktop,
-    mobile: SugarcubesMobile
+    mobile: SugarcubesMobile,
   },
 ];
 
-const Grid = styled.section`
+const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
@@ -43,7 +43,7 @@ const Grid = styled.section`
 
 const Photo = styled.div`
   aspect-ratio: 1/1;
-  background: url(${props => props.mobile});
+  background: url(${(props) => props.mobile});
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -52,11 +52,12 @@ const Photo = styled.div`
   }
 `;
 
-
 export const PhotoGrid = () => {
   return (
     <Grid>
-      { photos.map(({ desktop, mobile }) => (<Photo key={desktop} desktop={desktop} mobile={mobile} />))}
+      {photos.map(({ desktop, mobile }) => (
+        <Photo key={desktop} desktop={desktop} mobile={mobile} />
+      ))}
     </Grid>
-  )
-}
+  );
+};
